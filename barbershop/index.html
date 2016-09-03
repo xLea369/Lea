@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="style.css">
+	<head>
+		<meta charset="utf-8">
+		<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="style.css" type="text/css" >
+		<title>
+		</title>		
+	</head>
+	<body>
+		<header class="main-header">
+			<div class="container clearfix">
+				<nav class="main-navigation">
+					<ul>						
+						<li><a href="#">Информация</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="price.html">Прайс-лист</a></li>
+						<li><a href="shop.html">Магазин</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+				<div class="user-block">	
+					<a class="login" href="#">Вход</a>
+				</div>
+			</div>
+		</header>
+		<main class="container">
+			<div class="index-logo">
+				<img src="img/logo.png" alt="Барбершоп Бородинский">
+			</div>
+			<div class="features clearfix">
+				<div class="features-item">
+					<div class="features-name">Быстро</div>						
+					<p>Мы делаем свою работу быстро! Два часа пролетят незаметно и Вы - счастливый обладатель стильной стрижки-минутки!</p>
+				</div>
+				<div class="features-item">
+					<div class="features-name">Круто</div>						
+					<p>Забудьте, как вы стриглись раньше. Мы сделаем из Вас звезду футбола или кино! Во всяком случае внешне.</p>
+				</div>
+				<div class="features-item">
+					<div class="features-name">Дорого</div>						
+					<p>Наши мастера - профессионалы своего дела и не могут стоить дешево, к тому же, разве цена не дает определенный статус?</p>
+				</div>
+			</div>
+			<div class="content clearfix">
+				<div class="content-left">
+					<h2 class="content-title">Новости</h2>
+					<ul class="news-preview">
+						<li>
+							<p>Нам наконец-то завезли ягермайстер! Теперь Вы можете пропустить стаканчик во время стрижки</p>
+							<time datetime="2016-07-18">18 июля</time>
+						</li>
+						<li>
+							<p>В нашей команде пополнение, Борис "Бритва" Стригунец, обладатель множества титулов и наград пополнил наши стройные ряды</p>
+							<time datetime="2016-07-11">11 июля</time>
+						</li>
+						
+					</ul>
+					<a class="btn" href="#">Все новости</a>
+				</div>
+				<div class="content-right">
+					<h2 class="content-title">Фотогалерея</h2>
+					<div class="gallery">
+						<figure class="gallery-content">
+							<img src="img/gallery-1.jpg" alt="">
+						</figure>
+						<button class="btn gallery-prev disabled" type="button">Назад</button>
+						<button class="btn gallery-next" type="button">Вперед</button>
+					</div>
+				</div>
+			</div>
+			<div class="content clearfix">
+				<div class="content-left">
+					<h2 class="content-title">Контактная информация</h2>
+					<p>
+						Барбершоп "Бородинский"<br>
+						Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+						Телефон: +7 (495) 666-02-66
+					</p>
+					<p>
+						Время работы:<br>
+						ПН - ПТ: с 10:00 до 22:00<br>
+						СБ - ВС: с 10:00 до 19:00
+					</p>
+					<a class="btn js-open-map" href="#">Как проехать</a>
+					<a class="btn" href="#">Обратная связь</a>
+				</div>
+				<div class="content-right">
+					<h2 class="content-title">Записаться</h2>						
+					<p>Укажите желаемую дату и время и мы свяжемся с Вами для подтверждения брони</p>
+					<form class="appointment-form" action="https://echo.htmlacademy.r" method="post">
+						<input type="text" name="date" value="" placeholder="Дата">
+						<input type="text" name="time" value="" placeholder="Время">
+						<input type="text" name="name" value="" placeholder="Ваше имя">
+						<input type="tel" name="phone" value="" placeholder="Телефон">
+						<button class="btn" type="submit">Отправить</button>
+					</form>
+				</div>
+			</div>			
+		</main>
+		<footer class="main-footer clearfix">
+			<div class="container">
+				<div class="footer-contacts">
+					Барбершоп "Бородинский"<br>
+					Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+					<a href="#">Как нас найти?</a><br>
+					Телефон: +7 (495) 666-02-66
+				</div>
+				<div class="footer-social">
+					<p>Давайте дружить!</p>
+					<a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+					<a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+					<a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+				</div>
+				<div class="footer-copyright">
+					<p>Разработано:</p>
+					<a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+				</div>
+			</div>
+		</footer>
+
+	<div class="modal-content">
+		<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<h2 class="modal-content-title">Личный кабинет</h2>
+		<p>Введите свой логин и пароль</p>
+		<form class="login-form" action="#" method="post">
+			<input class="icon-user" type="text" name="login" placeholder="Логин">
+			<input class="icon-password" type="password" name="password" placeholder="Пароль">
+			<label class="login-checkbox">
+				<input type="checkbox" name="remember">
+				<span class="checkbox-indicator"></span>
+				Запомните меня
+			</label>
+			<a class="restore" href="#">Я забыл пароль!</a>
+			<button class="btn" type="submit">Войти</button>
+		</form>
+	</div>
+    <div class="modal-content-map">
+        <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+		<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5991043651595!2d30.320894616298492!3d59.93879418187624!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1470240903427" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>-->
+        <div id="yandex-map"></div>
+    </div>
+    <div class="modal-overlay"></div>
+	
+	
+	
+	
+	<script>
+		var link = document.querySelector(".login");
+		var popup = document.querySelector(".modal-content");
+		var close = document.querySelector(".modal-content-close");
+		var login = popup.querySelector("[name=login]");
+		var password = popup.querySelector("[name=password]");
+		var form = popup.querySelector("form");
+		var storage = localStorage.getItem("login");
+		
+		var mapOpen = document.querySelector(".js-open-map");
+		var mapPopup = document.querySelector(".modal-content-map");
+		var mapClose = document.querySelector(".modal-content-close");
+		
+		link.addEventListener("click", function(event) {
+			event.preventDefault();
+			console.log("Клик по ссылке вход");			
+			popup.classList.add("modal-content-show");
+			
+			
+			if (storage) {
+				login.value = storage;
+				password.focus();
+			} else {
+				login.focus();
+			}
+			
+		});
+		
+		close.addEventListener("click", function(event){
+			event.preventDefault();
+			popup.classList.remove("modal-content-show");
+			popup.classList.remove("modal-error");
+		});
+		
+		form.addEventListener("submit", function(event) {
+			if (!login.value || !password.value) {
+				event.preventDefault();
+				popup.classList.add("modal-error");				
+			} else {
+				localStorage.setItem("login", login.value);
+			}			
+		});
+		
+		window.addEventListener("keydown", function(event){
+			if (event.keyCode === 27) {
+				if (popup.classList.contains("modal-content-show")){
+					popup.classList.remove("modal-content-show");
+				}				
+			}
+		});
+		
+		
+		
+		mapOpen.addEventListener("click", function(event) {
+			event.preventDefault();					
+			mapPopup.classList.add("modal-content-show");			
+		});
+		
+		mapClose.addEventListener("click", function(event){
+			event.preventDefault();
+			mapPopup.classList.remove("modal-content-show");			
+		});	
+		
+		window.addEventListener("keydown", function(event){
+			if (event.keyCode === 27) {
+				if (mapPopup.classList.contains("modal-content-show")){
+					mapPopup.classList.remove("modal-content-show");
+				}				
+			}
+		});
+				
+	</script>
+	
+		
+	
+	</body>
+</html>
